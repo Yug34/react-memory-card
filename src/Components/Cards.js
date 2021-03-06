@@ -9,7 +9,7 @@ function Cards(props) {
         <Card key={card.name} name={card.name} url={card.url} />
       ))
     );
-  }, []);
+  }, [props.cardList]);
 
   return <div>{cardList ? cardList : "Loading"}</div>;
 }

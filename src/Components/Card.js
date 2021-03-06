@@ -10,7 +10,7 @@ function Card(props) {
       .then((data) => {
         setSprite(data.sprites.other["official-artwork"].front_default);
       });
-  }, []);
+  });
 
   useEffect(() => {
     if(sprite) {
