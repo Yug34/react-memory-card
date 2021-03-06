@@ -6,11 +6,23 @@ import getRandom from "../Helpers/getRandom";
 function Cards(props) {
   let [cardList, setCardList] = useState(null);
   let [cards, setCards] = useState(null);
+  let [clickedCards, setClickedCards] = useState([]);
+  let [score, setScore] = useState(0);
 
-  function cardClick(e) {
+  function cardClick(e, cardName) {
     e.preventDefault();
 
-    console.log(cards);
+    if(clickedCards.includes(cardName)) {
+      setScore(0);
+    } else {
+      setScore(score+1);
+
+      let clicked = clickedCards;
+      clicked.push(cardName);
+      setClickedCards(clicked);
+    }
+
+    console.log(score);
 
     if(cards) {
       setCards(getRandom(props.cardList, 10));
@@ -21,7 +33,7 @@ function Cards(props) {
     if(cards) {
       setCardList(
           cards.map((card) => (
-              <Card key={card.name} name={card.name} url={card.url} clickHandler={e => cardClick(e)}/>
+              <Card key={card.name} name={card.name} url={card.url} clickHandler={e => cardClick(e, card.name)}/>
           ))
       );
     }
@@ -37,7 +49,12 @@ function Cards(props) {
     setCards(props.cardList);
   }, [props.cardList]);
 
-  return <div>{cardList ? cardList : null}</div>;
+  return (
+      <div>
+        {score===10? "You won!": null}
+        <h1>{score}</h1>
+        {cardList ? cardList : null}
+      </div>);
 }
 
 export default Cards;
