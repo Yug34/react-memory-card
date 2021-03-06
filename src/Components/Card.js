@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/Card.css";
+import questionMark from "../media/images/questionMark.png";
 
 function Card(props) {
   let [sprite, setSprite] = useState(null);
@@ -15,20 +16,22 @@ function Card(props) {
 
   useEffect(() => {
     if (sprite) {
-      console.log(sprite);
       setLoaded(true);
     }
   }, [sprite]);
 
   return (
-    <div className="pokeCard">
+    <div onClick={props.clickHandler} className="pokeCard">
       {loaded ? (
         <div className="pokeMon">
           <img className="pokeSprite" src={sprite} alt={props.name}/>
           <h5 className="pokeName">{props.name}</h5>
         </div>
       ) : (
-        "Loading.."
+          <div className="pokeMon">
+            <img className="pokeSprite" src={questionMark} alt="Who's that pokemon!"/>
+            <h5 className="pokeName">Loading...</h5>
+          </div>
       )}
     </div>
   );
