@@ -11,7 +11,7 @@ function Cards(props) {
     );
   }, [props.cardList]);
 
-  return <div>{cardList ? cardList : "Loading"}</div>;
+  return <div>{cardList ? cardList : null}</div>;
 }
 
 export default Cards;

@@ -16,7 +16,6 @@ function getRandom(arr, n) {
 }
 
 function Game() {
-  // let [isLoaded, setIsLoaded] = useState(false);
   let [gameCards, setGameCards] = useState(null);
   let [cardList, setCardList] = useState(null);
 
@@ -24,7 +23,6 @@ function Game() {
     fetch("https://pokeapi.co/api/v2/pokemon/?limit=30/")
       .then((res) => res.json())
       .then((data) => {
-        // setIsLoaded(true);
         setGameCards(data.results);
       });
   }, []);

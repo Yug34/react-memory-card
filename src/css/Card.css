@@ -1,5 +1,9 @@
 .pokeCard {
-
+    display: inline-flex;
+    border: 1px solid green;
+    font-size: 30px;
+    margin: 10px;
+    padding: 20px;
 }
 
 .pokeCard .pokeMon {
@@ -7,13 +11,10 @@
 }
 
 .pokeCard .pokeMon .pokeSprite {
-    height: 128px;
-    width: 128px;
+    height: 26vh;
+    width: 15vw;
 }
 
 .pokeCard .pokeMon .pokeName {
-    alignment: center;
-    align-self: center;
-    align-content: center;
-    align-items: center;
+    text-transform: capitalize;
 }
