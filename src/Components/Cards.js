@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import getRandom from "../Helpers/getRandom";
+import "../css/Cards.css";
 
 
 function Cards(props) {
@@ -14,6 +15,7 @@ function Cards(props) {
 
     if(clickedCards.includes(cardName)) {
       setScore(0);
+      setClickedCards([]);
     } else {
       setScore(score+1);
 
@@ -21,8 +23,6 @@ function Cards(props) {
       clicked.push(cardName);
       setClickedCards(clicked);
     }
-
-    console.log(score);
 
     if(cards) {
       setCards(getRandom(props.cardList, 10));
@@ -50,9 +50,9 @@ function Cards(props) {
   }, [props.cardList]);
 
   return (
-      <div>
+      <div className="cardsContainer">
         {score===10? "You won!": null}
-        <h1>{score}</h1>
+        <h1>{score}/10</h1>
         {cardList ? cardList : null}
       </div>);
 }
