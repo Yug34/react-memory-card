@@ -1,0 +1,19 @@
+.pokeCard {
+
+}
+
+.pokeCard .pokeMon {
+
+}
+
+.pokeCard .pokeMon .pokeSprite {
+    height: 128px;
+    width: 128px;
+}
+
+.pokeCard .pokeMon .pokeName {
+    alignment: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}

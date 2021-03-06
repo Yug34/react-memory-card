@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
+import "../css/Card.css";
 
 function Card(props) {
   let [sprite, setSprite] = useState(null);
@@ -13,16 +14,23 @@ function Card(props) {
   });
 
   useEffect(() => {
-    if(sprite) {
+    if (sprite) {
       console.log(sprite);
       setLoaded(true);
     }
   }, [sprite]);
 
   return (
-      <div>
-        {loaded? <img src={sprite} alt={props.name}/>: "Loading.."}
-      </div>
+    <div className="pokeCard">
+      {loaded ? (
+        <div className="pokeMon">
+          <img className="pokeSprite" src={sprite} alt={props.name}/>
+          <h5 className="pokeName">{props.name}</h5>
+        </div>
+      ) : (
+        "Loading.."
+      )}
+    </div>
   );
 }
 
