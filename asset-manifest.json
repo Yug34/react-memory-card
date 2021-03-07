@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Yug34/react-memory-card/static/css/main.da943fd1.chunk.css",
-    "main.js": "/Yug34/react-memory-card/static/js/main.659c6207.chunk.js",
-    "main.js.map": "/Yug34/react-memory-card/static/js/main.659c6207.chunk.js.map",
-    "runtime-main.js": "/Yug34/react-memory-card/static/js/runtime-main.9ec00e80.js",
-    "runtime-main.js.map": "/Yug34/react-memory-card/static/js/runtime-main.9ec00e80.js.map",
-    "static/js/2.c20c7191.chunk.js": "/Yug34/react-memory-card/static/js/2.c20c7191.chunk.js",
-    "static/js/2.c20c7191.chunk.js.map": "/Yug34/react-memory-card/static/js/2.c20c7191.chunk.js.map",
-    "static/js/3.e14d6dc2.chunk.js": "/Yug34/react-memory-card/static/js/3.e14d6dc2.chunk.js",
-    "static/js/3.e14d6dc2.chunk.js.map": "/Yug34/react-memory-card/static/js/3.e14d6dc2.chunk.js.map",
-    "index.html": "/Yug34/react-memory-card/index.html",
-    "static/css/main.da943fd1.chunk.css.map": "/Yug34/react-memory-card/static/css/main.da943fd1.chunk.css.map",
-    "static/js/2.c20c7191.chunk.js.LICENSE.txt": "/Yug34/react-memory-card/static/js/2.c20c7191.chunk.js.LICENSE.txt",
-    "static/media/questionMark.bdcc1b19.png": "/Yug34/react-memory-card/static/media/questionMark.bdcc1b19.png"
+    "main.css": "/react-memory-card/static/css/main.da943fd1.chunk.css",
+    "main.js": "/react-memory-card/static/js/main.659c6207.chunk.js",
+    "main.js.map": "/react-memory-card/static/js/main.659c6207.chunk.js.map",
+    "runtime-main.js": "/react-memory-card/static/js/runtime-main.ecdd8299.js",
+    "runtime-main.js.map": "/react-memory-card/static/js/runtime-main.ecdd8299.js.map",
+    "static/js/2.c20c7191.chunk.js": "/react-memory-card/static/js/2.c20c7191.chunk.js",
+    "static/js/2.c20c7191.chunk.js.map": "/react-memory-card/static/js/2.c20c7191.chunk.js.map",
+    "static/js/3.e14d6dc2.chunk.js": "/react-memory-card/static/js/3.e14d6dc2.chunk.js",
+    "static/js/3.e14d6dc2.chunk.js.map": "/react-memory-card/static/js/3.e14d6dc2.chunk.js.map",
+    "index.html": "/react-memory-card/index.html",
+    "static/css/main.da943fd1.chunk.css.map": "/react-memory-card/static/css/main.da943fd1.chunk.css.map",
+    "static/js/2.c20c7191.chunk.js.LICENSE.txt": "/react-memory-card/static/js/2.c20c7191.chunk.js.LICENSE.txt",
+    "static/media/questionMark.bdcc1b19.png": "/react-memory-card/static/media/questionMark.bdcc1b19.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9ec00e80.js",
+    "static/js/runtime-main.ecdd8299.js",
     "static/js/2.c20c7191.chunk.js",
     "static/css/main.da943fd1.chunk.css",
     "static/js/main.659c6207.chunk.js"
