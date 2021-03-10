@@ -7,7 +7,7 @@ function Game() {
   let [cardList, setCardList] = useState(null);
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon/?limit=30/")
+    fetch("https://pokeapi.co/api/v2/pokemon/?limit=100/")
       .then((res) => res.json())
       .then((data) => {
         setGameCards(data.results);
